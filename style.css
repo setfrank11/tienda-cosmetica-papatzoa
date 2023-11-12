@@ -1,0 +1,186 @@
+/*Barra de navegacion*/
+
+.navbar {
+    padding: .3rem;
+    background-color: white;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar-collapse i {
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.navbar-collapse i:hover{
+    background: rgb(77, 33, 158);
+    color:rgb(239, 236, 245);
+}
+
+.navbar-light .navbar-brand{
+    color:black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color:black;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color:black
+}
+
+.w-100{
+    height:100vh;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: black;
+}
+
+p{
+    margin: 1rem auto;
+    font-size: 1.5;
+}
+    /*Estilos generales*/
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background: #f1fbff;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.shop .slide{
+        width: 30rem;
+
+        image{
+            height: 1rem;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+    }
+
+/*Card*/
+
+.img-container {
+    position: relative;
+}
+
+.image {
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overplay {
+    transition:  .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.img-container:hover .image {
+    opacity: 0.2;
+}
+.img-container:hover .overplay {
+    opacity: 1;
+}
+
+.card {
+    transition: all 0.3s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+/*testimonio*/
+
+.section-header span{
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.testimonials {
+    max-width: 800px;
+    padding: 0 15px 50px;
+    margin: 0 auto 80px auto;
+}
+
+.single-item {
+    background: #fff;
+    color: #111;
+    padding: 15px;
+    margin: 50px 15p;
+}
+
+
+/*Resposivo*/
+
+@media screen and (max-width: 767px){ 
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    } 
+
+    .navbar-brand{
+        display: none;
+    }
+}
+ 
+
+@media (max-width: 991px){
+    section{
+      padding: 3rem 2rem;
+    }
+}
